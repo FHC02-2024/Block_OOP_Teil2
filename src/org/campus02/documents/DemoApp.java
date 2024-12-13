@@ -13,7 +13,6 @@ public class DemoApp {
 
         TextDocument text = new TextDocument("text.txt", "Lorem Ipsum Text");
 
-
         PrintManager pm = new PrintManager();
         pm.add(d);
         pm.add(id);
