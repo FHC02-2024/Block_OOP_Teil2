@@ -8,6 +8,5 @@ public class Document {
     }
 
     public void printDocument() {
-        System.out.println("This is a document: "  + fileName);
     }
 }
