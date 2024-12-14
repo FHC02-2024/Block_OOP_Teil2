@@ -4,14 +4,16 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 public class BookStoreAnalyzer {
-    private ArrayList<Book> books;
+    private ArrayList<Book> books; // Set
 
     public BookStoreAnalyzer() {
         books = new ArrayList<>();
     }
 
     public void addBook(Book b) {
-        books.add(b);
+        if (!books.contains(b)) {
+            books.add(b);
+        }
     }
 
     public HashMap<String, Integer> getCountBooksInCategory() {
